@@ -2,14 +2,14 @@
 <html lang="it"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Il calendario della nonna</title>
+<title>Bonaria · il calendario della nonna</title>
 <meta name="description" content="Il calendario delle usanze di buon auspicio del libro «Le tradizioni della nonna per un anno fortunato»: ti avvisa quando arriva la prossima usanza.">
 <meta name="theme-color" content="#5a3a24">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icona-192.png">
-<link rel="apple-touch-icon" href="icona-192.png">
+<link rel="apple-touch-icon" href="icona-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="La nonna">
+<meta name="apple-mobile-web-app-title" content="Bonaria">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Alegreya+Sans:wght@400;700&family=Dancing+Script:wght@600&display=swap">
 <style>
@@ -64,6 +64,7 @@ dialog::backdrop{background:rgba(40,25,15,.55)}
 .pop .chiudi{justify-self:end;font:700 22px var(--ui);background:none;border:0;color:var(--tenue);cursor:pointer;line-height:1;padding:4px 8px;margin:-6px -6px -10px 0}
 footer{display:grid;gap:8px;justify-items:center;font-size:14px;color:var(--tenue);text-align:center}
 footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;text-decoration:underline;cursor:pointer}
+.passi-ios{margin:0;padding-left:22px;display:grid;gap:10px}
 .avviso-prova{background:#fff3cd;color:#5c4400;border-radius:8px;padding:10px 12px;font-size:14px}
 [hidden]{display:none!important}
 </style>
@@ -88,35 +89,22 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
     </div>
   </section>
 
-  <!-- PASSI: dopo l'iscrizione, due tocchi per avere gli avvisi e l'icona sul telefono -->
+  <!-- DOPO L'ISCRIZIONE: scaricare l'app sul telefono -->
   <section id="passi" hidden style="display:grid;gap:20px">
-    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="passi-saluto">Benvenuta!</h1><p class="nota">Due tocchi e il calendario è sul tuo telefono.</p></div></div>
+    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="passi-saluto">Ciao!</h1><p class="nota">Sono nonna Bonaria, ecco il mio calendario.</p></div></div>
     <div class="scheda evid" style="gap:12px">
-      <span class="quando">Passo 1</span>
-      <span class="tit">Attiva gli avvisi</span>
-      <p>Le usanze entrano nel calendario del tuo telefono: la sera prima alle 18 e la mattina alle 9 ti arriva la notifica, anche senza aprire l'app.</p>
-      <div id="avvisi-ios" hidden style="display:grid;gap:8px">
-        <a class="btn" id="btn-ios" href="calendario-nonna.ics">Attiva gli avvisi</a>
-        <p class="nota">Il telefono ti chiede se vuoi vedere il calendario: tocca <b>Consenti</b>, poi <b>Aggiungi tutti</b> in alto a destra.</p>
-      </div>
-      <div id="avvisi-android" hidden style="display:grid;gap:8px">
-        <a class="btn" id="btn-google" target="_blank" rel="noopener">Attiva gli avvisi in Google Calendar</a>
-        <p class="nota">Si apre Google Calendar e ti chiede se vuoi aggiungere il calendario: tocca <b>Aggiungi</b>.</p>
-        <a class="btn chiaro" id="btn-file" href="calendario-nonna.ics" download>Uso un altro calendario (Samsung, Xiaomi…)</a>
-      </div>
-    </div>
-    <div class="scheda evid" style="gap:12px">
-      <span class="quando">Passo 2</span>
-      <span class="tit">Metti l'app sul telefono</span>
+      <span class="tit">Scarica l'app sul telefono</span>
+      <p>Così Bonaria resta tra le tue app: la apri con un tocco e trovi sempre la prossima usanza, la pagina del libro e cosa ti serve.</p>
       <p id="installa-passi"></p>
-      <button class="btn" id="installa-btn2" type="button" hidden>Installa l'app</button>
+      <button class="btn" id="installa-btn2" type="button" hidden>Scarica l'app</button>
+      <button class="btn" type="button" data-guida data-solo-iphone hidden>Come aggiungo Bonaria alla Home</button>
     </div>
-    <button class="btn chiaro" id="fine-passi" type="button">Fatto, vai al calendario</button>
+    <button class="btn chiaro" id="fine-passi" type="button">Vai al calendario</button>
   </section>
 
   <!-- CALENDARIO -->
   <section id="app" hidden style="display:grid;gap:22px">
-    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="saluto">Ciao!</h1><p class="nota">Il calendario della nonna</p></div></div>
+    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="saluto">Ciao!</h1><p class="nota">Sono nonna Bonaria, ecco il mio calendario.</p></div></div>
     <p id="prova" class="avviso-prova" hidden></p>
 
     <div id="prossima" class="scheda evid"></div>
@@ -132,18 +120,21 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
     </div>
 
     <div class="scheda" style="gap:14px">
-      <h2>Gli avvisi</h2>
-      <div class="riga"><div><b>Il plin</b><p class="nota">Un piccolo suono quando si apre l'avviso del giorno.</p></div>
-        <label class="interr"><input type="checkbox" id="plin" aria-label="Suono plin"><span></span></label></div>
+      <h2>L'app</h2>
       <div style="display:grid;gap:8px">
-        <b>Avvisi sul telefono</b>
-        <p class="nota">Aggiungi tutte le usanze al calendario del telefono: ti arriva un promemoria la sera prima alle 18 e la mattina alle 9, anche ad app chiusa.</p>
-        <button class="btn" id="ics" type="button">Attiva gli avvisi nel calendario</button>
+        <div class="riga"><div><b>Notifiche</b><p class="nota">Il giorno prima e il giorno dell'usanza ti arriva una notifica sul telefono, come quelle dei messaggi.</p></div>
+          <label class="interr" id="interr-notifiche"><input type="checkbox" id="notifiche" aria-label="Notifiche"><span></span></label></div>
+        <p class="nota" id="notifiche-stato" hidden></p>
+        <div id="notifiche-iphone" hidden style="display:grid;gap:8px">
+          <p class="avviso-prova">Su iPhone le notifiche funzionano solo se Bonaria è sulla schermata Home. Aggiungila, poi aprila dall'icona e attiva le notifiche da qui.</p>
+          <button class="btn" type="button" data-guida>Come aggiungo Bonaria alla Home</button>
+        </div>
       </div>
       <div style="display:grid;gap:6px">
-        <b>Metti l'app nella schermata Home</b>
+        <b>Scarica l'app sul telefono</b>
         <p class="nota" id="installa"></p>
-        <button class="btn chiaro" id="installa-btn" type="button" hidden>Installa l'app</button>
+        <button class="btn chiaro" id="installa-btn" type="button" hidden>Scarica l'app</button>
+        <button class="btn chiaro" type="button" data-guida data-solo-iphone hidden>Come aggiungo Bonaria alla Home</button>
       </div>
     </div>
 
@@ -156,6 +147,19 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
   </section>
 </div>
 
+<!-- guida iPhone: aggiungere alla schermata Home (Apple non permette di farlo in automatico) -->
+<dialog id="guida" aria-labelledby="guida-tit"><div class="pop">
+  <button class="chiudi" type="button" aria-label="Chiudi">×</button>
+  <h2 id="guida-tit">Bonaria sulla Home dell'iPhone</h2>
+  <p class="nota">Apri questa pagina con <b>Safari</b>, poi:</p>
+  <ol class="passi-ios">
+    <li>Tocca il pulsante <b>Condividi</b> <svg viewBox="0 0 24 24" width="22" height="22" role="img" aria-label="icona Condividi" style="vertical-align:-5px"><path d="M12 3v12M7 8l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11v9h14v-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> (il quadrato con la freccia, in basso).</li>
+    <li>Scorri e tocca <b>Aggiungi alla schermata Home</b>.</li>
+    <li>Tocca <b>Aggiungi</b> in alto a destra.</li>
+    <li>Apri <b>Bonaria</b> dalla nuova icona e attiva le <b>Notifiche</b>.</li>
+  </ol>
+</div></dialog>
+
 <!-- pop-up di oggi / domani -->
 <dialog id="pop" aria-labelledby="pop-tit"><div class="pop">
   <button class="chiudi" type="button" aria-label="Chiudi">×</button>
@@ -165,7 +169,8 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
 <script>
 /* ===== da compilare ===== */
 const ISCRIZIONI_URL = "https://script.google.com/macros/s/AKfycbxKrKKLw5fdLvzET2q0C6FYNtqhgQGaN5Mys1mEkO4KssrTM0gSq6f-Mc6Y8Wh6wvHD/exec";   // indirizzo dell'App web di Google Apps Script (finisce con /exec)
-const ASIN = "";             // codice Amazon del libro, dopo la pubblicazione: attiva il pulsante recensione
+const ASIN = "";
+const NOTIFICHE_CHIAVE = "BH2LAudyGsQp72wom_sAKYd07ijNnjZ24i9C1lfGhxyGZtwVhbIZTXuOk0wnrEJePXwxMI9CcaTp9YqscT5kxxg";   // chiave pubblica delle notifiche (quella privata è solo su GitHub)             // codice Amazon del libro, dopo la pubblicazione: attiva il pulsante recensione
 /* ======================== */
 
 const $ = s => document.querySelector(s);
@@ -229,10 +234,10 @@ function mostraApp(utente) {
   }).join("");
 
   // impostazioni
-  $("#plin").checked = !!leggi("plin");
-  $("#plin").onchange = e => { scrivi("plin", e.target.checked); if (e.target.checked) suona(); };
   if (ASIN) { const r = $("#recensione"); r.hidden = false; r.href = `https://www.amazon.it/review/create-review?asin=${ASIN}`; }
   istruzioniInstalla();
+  document.querySelectorAll("[data-solo-iphone]").forEach(b => b.hidden = !(IPHONE && !SULLA_HOME));
+  preparaNotifiche().catch(() => {});
 
   // pop-up: una volta al giorno, se oggi o domani c'è un'usanza
   if ((oggi.length || domani.length) && leggi("visto") !== OGGI) apriPop(oggi, domani);
@@ -244,25 +249,13 @@ function apriPop(oggi, domani) {
   if (domani.length) h += (oggi.length ? "" : `<h2 id="pop-tit">Domani c'è un'usanza</h2>`) + domani.map(u => cartaUsanza(u, "Domani · " + bello(DOMANI), !oggi.length)).join("");
   $("#pop-corpo").innerHTML = h;
   const d = $("#pop"); d.showModal(); scrivi("visto", OGGI);
-  if (leggi("plin")) suona();
 }
 
-// il plin: i browser permettono il suono solo dopo un tocco, quindi se è bloccato suona al primo tocco
-const audio = new Audio("plin.wav");
-function suona() {
-  audio.currentTime = 0;
-  audio.play().catch(() => document.addEventListener("pointerdown", () => { audio.currentTime = 0; audio.play().catch(() => {}); }, { once: true }));
-}
-
-// avvisi: il calendario pubblicato accanto all'app (calendario-nonna.ics), con la notifica la sera prima alle 18 e la mattina alle 9
-const ICS_URL = new URL("calendario-nonna.ics", location.href).href;
-const IOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 function mostraPassi(utente) {
   $("#porta").hidden = true; $("#app").hidden = true; $("#passi").hidden = false;
-  $("#passi-saluto").textContent = `Benvenuta, ${utente.nome}!`;
-  $("#avvisi-ios").hidden = !IOS; $("#avvisi-android").hidden = IOS;
-  $("#btn-google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(ICS_URL.replace(/^https?:/, "webcal:"));
+  $("#passi-saluto").textContent = `Ciao, ${utente.nome}!`;
   istruzioniInstalla();
+  document.querySelectorAll("[data-solo-iphone]").forEach(b => b.hidden = !(IPHONE && !SULLA_HOME));
   scrollTo(0, 0);
 }
 $("#fine-passi").onclick = () => { scrivi("passi", true); mostraApp(leggi("iscritta")); scrollTo(0, 0); };
@@ -272,14 +265,65 @@ addEventListener("beforeinstallprompt", e => { e.preventDefault(); promptInstall
 function istruzioniInstalla() {
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
   const giaInstallata = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
-  const testo = giaInstallata ? "Fatto: l'app è già sulla schermata Home."
-    : ios ? "Su iPhone: tocca il pulsante Condividi (il quadrato con la freccia) e poi «Aggiungi alla schermata Home»."
-    : "Su Android: apri il menu del browser (i tre puntini) e tocca «Installa app» o «Aggiungi a schermata Home».";
+  const testo = giaInstallata ? "Fatto: Bonaria è già tra le tue app."
+    : ios ? "Su iPhone: tocca il pulsante Condividi (il quadrato con la freccia in basso), poi «Aggiungi alla schermata Home» e «Aggiungi»."
+    : "Su Android: tocca «Scarica l'app» qui sotto, oppure apri il menu del browser (i tre puntini) e scegli «Installa app».";
   $("#installa").textContent = testo; $("#installa-passi").textContent = testo;
   if (promptInstalla) { $("#installa-btn").hidden = false; $("#installa-btn2").hidden = false; }
   const installa = async () => { if (!promptInstalla) return; promptInstalla.prompt(); await promptInstalla.userChoice; promptInstalla = null; $("#installa-btn").hidden = true; $("#installa-btn2").hidden = true; };
   $("#installa-btn").onclick = installa; $("#installa-btn2").onclick = installa;
 }
+
+// notifiche push: il telefono le riceve anche ad app chiusa; le manda ogni mattina il «postino» su GitHub
+const PUSH_OK = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+const SULLA_HOME = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const IPHONE = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const chiaveU8 = b64 => { const s = atob((b64 + "===".slice((b64.length + 3) % 4)).replace(/-/g, "+").replace(/_/g, "/")); return Uint8Array.from(s, c => c.charCodeAt(0)); };
+const manda = dati => ISCRIZIONI_URL ? fetch(ISCRIZIONI_URL, { method: "POST", mode: "no-cors", body: new URLSearchParams(dati) }) : Promise.resolve();
+function statoNotifiche(testo) { const p = $("#notifiche-stato"); p.hidden = !testo; p.textContent = testo || ""; }
+
+async function preparaNotifiche() {
+  const box = $("#notifiche"), iphoneFuori = IPHONE && !SULLA_HOME;
+  $("#notifiche-iphone").hidden = !iphoneFuori;
+  $("#interr-notifiche").hidden = iphoneFuori;
+  if (iphoneFuori) return;
+  if (!PUSH_OK) { $("#interr-notifiche").hidden = true; statoNotifiche("Questo telefono o questo browser non riceve notifiche dalle app web. Prova ad aprire Bonaria con Chrome (Android) o Safari (iPhone)."); return; }
+  if (Notification.permission === "denied") { box.checked = false; statoNotifiche("Le notifiche sono bloccate: riattivale dalle impostazioni del telefono, alla voce Bonaria."); return; }
+  const reg = await navigator.serviceWorker.ready;
+  const sub = await reg.pushManager.getSubscription();
+  box.checked = !!sub && Notification.permission === "granted";
+  // ogni tanto riconferma l'indirizzo del telefono, nel caso sia cambiato
+  if (box.checked && (leggi("notifiche-confermate") || "") < piu(OGGI, -30)) inviaIscrizionePush(sub);
+}
+
+function inviaIscrizionePush(sub) {
+  const j = sub.toJSON();
+  scrivi("notifiche-confermate", OGGI);
+  return manda({ azione: "notifiche-attiva", endpoint: j.endpoint, p256dh: j.keys.p256dh, auth: j.keys.auth });
+}
+
+$("#notifiche").addEventListener("change", async e => {
+  const box = e.target; box.disabled = true; statoNotifiche("");
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    if (box.checked) {
+      const permesso = await Notification.requestPermission();
+      if (permesso !== "granted") { box.checked = false; statoNotifiche(permesso === "denied" ? "Hai bloccato le notifiche: puoi riattivarle dalle impostazioni del telefono." : ""); return; }
+      const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: chiaveU8(NOTIFICHE_CHIAVE) });
+      await inviaIscrizionePush(sub);
+      statoNotifiche("Notifiche attive: ti arriva un avviso il giorno prima e il giorno di ogni usanza.");
+    } else {
+      const sub = await reg.pushManager.getSubscription();
+      if (sub) { await manda({ azione: "notifiche-disattiva", endpoint: sub.endpoint }); await sub.unsubscribe(); }
+      statoNotifiche("Notifiche spente.");
+    }
+  } catch {
+    box.checked = !box.checked;
+    statoNotifiche("Non è stato possibile attivare le notifiche: controlla la connessione e riprova.");
+  } finally { box.disabled = false; }
+});
+
+document.addEventListener("click", e => { if (e.target.closest("[data-guida]")) $("#guida").showModal(); });
 
 // iscrizione
 $("#modulo").addEventListener("submit", async e => {
@@ -305,9 +349,8 @@ $("#modulo").addEventListener("submit", async e => {
 
 document.addEventListener("click", e => {
   const b = e.target.closest(".apri"); if (b) { const o = document.getElementById(b.getAttribute("aria-controls")); const ap = o.classList.toggle("aperto"); b.setAttribute("aria-expanded", ap); b.textContent = ap ? "Cosa ti serve ▴" : "Cosa ti serve ▾"; }
-  if (e.target.closest(".chiudi")) $("#pop").close();
+  const ch = e.target.closest(".chiudi"); if (ch) ch.closest("dialog").close();
 });
-$("#ics").onclick = () => mostraPassi(leggi("iscritta"));
 $("#esci").onclick = () => { if (confirm("Vuoi uscire? Per rientrare dovrai iscriverti di nuovo.")) { try { localStorage.clear(); } catch {} location.reload(); } };
 
 // avvio
@@ -316,6 +359,10 @@ fetch("usanze.json").then(r => r.json()).then(dati => {
   const utente = leggi("iscritta");
   if (utente && utente.nome) (leggi("passi") ? mostraApp(utente) : mostraPassi(utente)); else $("#porta").hidden = false;
 }).catch(() => { document.body.insertAdjacentHTML("afterbegin", '<p class="errore" style="padding:16px">Non riesco a caricare il calendario: controlla la connessione e riapri la pagina.</p>'); });
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && !qOggi && new Date(Date.now() - new Date().getTimezoneOffset() * 6e4).toISOString().slice(0, 10) !== OGGI) location.reload();
+});
 
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 </script>
