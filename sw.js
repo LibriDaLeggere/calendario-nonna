@@ -1,6 +1,6 @@
 // Tiene l'app disponibile anche senza connessione. Cambiare VERSIONE a ogni aggiornamento dei file.
-const VERSIONE = "nonna-v1";
-const FILE = ["./", "index.html", "usanze.json", "bonaria.jpg", "plin.wav", "icona-192.png", "icona-512.png", "manifest.webmanifest", "privacy.html"];
+const VERSIONE = "nonna-v2";
+const FILE = ["./", "index.html", "usanze.json", "bonaria.jpg", "plin.wav", "icona-192.png", "icona-512.png", "manifest.webmanifest", "privacy.html", "calendario-nonna.ics"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSIONE).then(c => c.addAll(FILE)).then(() => self.skipWaiting()));

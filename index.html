@@ -88,6 +88,32 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
     </div>
   </section>
 
+  <!-- PASSI: dopo l'iscrizione, due tocchi per avere gli avvisi e l'icona sul telefono -->
+  <section id="passi" hidden style="display:grid;gap:20px">
+    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="passi-saluto">Benvenuta!</h1><p class="nota">Due tocchi e il calendario è sul tuo telefono.</p></div></div>
+    <div class="scheda evid" style="gap:12px">
+      <span class="quando">Passo 1</span>
+      <span class="tit">Attiva gli avvisi</span>
+      <p>Le usanze entrano nel calendario del tuo telefono: la sera prima alle 18 e la mattina alle 9 ti arriva la notifica, anche senza aprire l'app.</p>
+      <div id="avvisi-ios" hidden style="display:grid;gap:8px">
+        <a class="btn" id="btn-ios" href="calendario-nonna.ics">Attiva gli avvisi</a>
+        <p class="nota">Il telefono ti chiede se vuoi vedere il calendario: tocca <b>Consenti</b>, poi <b>Aggiungi tutti</b> in alto a destra.</p>
+      </div>
+      <div id="avvisi-android" hidden style="display:grid;gap:8px">
+        <a class="btn" id="btn-google" target="_blank" rel="noopener">Attiva gli avvisi in Google Calendar</a>
+        <p class="nota">Si apre Google Calendar e ti chiede se vuoi aggiungere il calendario: tocca <b>Aggiungi</b>.</p>
+        <a class="btn chiaro" id="btn-file" href="calendario-nonna.ics" download>Uso un altro calendario (Samsung, Xiaomi…)</a>
+      </div>
+    </div>
+    <div class="scheda evid" style="gap:12px">
+      <span class="quando">Passo 2</span>
+      <span class="tit">Metti l'app sul telefono</span>
+      <p id="installa-passi"></p>
+      <button class="btn" id="installa-btn2" type="button" hidden>Installa l'app</button>
+    </div>
+    <button class="btn chiaro" id="fine-passi" type="button">Fatto, vai al calendario</button>
+  </section>
+
   <!-- CALENDARIO -->
   <section id="app" hidden style="display:grid;gap:22px">
     <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="saluto">Ciao!</h1><p class="nota">Il calendario della nonna</p></div></div>
@@ -112,7 +138,7 @@ footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;
       <div style="display:grid;gap:8px">
         <b>Avvisi sul telefono</b>
         <p class="nota">Aggiungi tutte le usanze al calendario del telefono: ti arriva un promemoria la sera prima alle 18 e la mattina alle 9, anche ad app chiusa.</p>
-        <button class="btn" id="ics" type="button">Aggiungi al calendario del telefono</button>
+        <button class="btn" id="ics" type="button">Attiva gli avvisi nel calendario</button>
       </div>
       <div style="display:grid;gap:6px">
         <b>Metti l'app nella schermata Home</b>
@@ -177,7 +203,7 @@ function cartaUsanza(u, etichetta, evid) {
 }
 
 function mostraApp(utente) {
-  $("#porta").hidden = true; $("#app").hidden = false;
+  $("#porta").hidden = true; $("#passi").hidden = true; $("#app").hidden = false;
   $("#saluto").textContent = `Ciao, ${utente.nome}!`;
   if (qOggi) { $("#prova").hidden = false; $("#prova").textContent = `Modalità prova: oggi è ${bello(OGGI)}.`; }
 
@@ -228,37 +254,31 @@ function suona() {
   audio.play().catch(() => document.addEventListener("pointerdown", () => { audio.currentTime = 0; audio.play().catch(() => {}); }, { once: true }));
 }
 
-// calendario del telefono (.ics) con due promemoria
-function scaricaIcs() {
-  const ora = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
-  const piatta = s => String(s).replace(/\\/g, "\\\\").replace(/[,;]/g, m => "\\" + m).replace(/\n/g, "\\n");
-  const righe = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Maria Bonastella//Calendario della nonna//IT", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Il calendario della nonna"];
-  USANZE.filter(u => fine(u) >= OGGI).forEach(u => {
-    const ini = u.data.replace(/-/g, ""), fin = piu(fine(u), 1).replace(/-/g, "");
-    const desc = `${u.quando}. Lo trovi a pagina ${u.pagina} del libro «Le tradizioni della nonna per un anno fortunato». Per cosa: ${u.per_cosa}. Cosa ti serve: ${u.occorrente}.`;
-    righe.push("BEGIN:VEVENT", `UID:nonna-${u.scheda}-${ini}@calendario-nonna`, `DTSTAMP:${ora}`, `DTSTART;VALUE=DATE:${ini}`, `DTEND;VALUE=DATE:${fin}`,
-      `SUMMARY:${piatta("La nonna: " + u.titolo)}`, `DESCRIPTION:${piatta(desc)}`, "TRANSP:TRANSPARENT",
-      "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${piatta("Domani: " + u.titolo)}`, "TRIGGER:-PT6H", "END:VALARM",
-      "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${piatta("Oggi: " + u.titolo + " (pagina " + u.pagina + ")")}`, "TRIGGER:PT9H", "END:VALARM",
-      "END:VEVENT");
-  });
-  righe.push("END:VCALENDAR");
-  // le righe lunghe vanno spezzate a 75 caratteri (regola del formato .ics)
-  const testo = righe.map(r => r.length <= 74 ? r : r.match(/.{1,73}/g).join("\r\n ")).join("\r\n");
-  const url = URL.createObjectURL(new Blob([testo], { type: "text/calendar;charset=utf-8" }));
-  const a = Object.assign(document.createElement("a"), { href: url, download: "calendario-della-nonna.ics" });
-  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
+// avvisi: il calendario pubblicato accanto all'app (calendario-nonna.ics), con la notifica la sera prima alle 18 e la mattina alle 9
+const ICS_URL = new URL("calendario-nonna.ics", location.href).href;
+const IOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+function mostraPassi(utente) {
+  $("#porta").hidden = true; $("#app").hidden = true; $("#passi").hidden = false;
+  $("#passi-saluto").textContent = `Benvenuta, ${utente.nome}!`;
+  $("#avvisi-ios").hidden = !IOS; $("#avvisi-android").hidden = IOS;
+  $("#btn-google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(ICS_URL.replace(/^https?:/, "webcal:"));
+  istruzioniInstalla();
+  scrollTo(0, 0);
 }
+$("#fine-passi").onclick = () => { scrivi("passi", true); mostraApp(leggi("iscritta")); scrollTo(0, 0); };
 
 let promptInstalla = null;
-addEventListener("beforeinstallprompt", e => { e.preventDefault(); promptInstalla = e; const b = $("#installa-btn"); if (b) b.hidden = false; });
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); promptInstalla = e; $("#installa-btn").hidden = false; $("#installa-btn2").hidden = false; });
 function istruzioniInstalla() {
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
   const giaInstallata = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
-  $("#installa").textContent = giaInstallata ? "Fatto: l'app è già sulla schermata Home."
+  const testo = giaInstallata ? "Fatto: l'app è già sulla schermata Home."
     : ios ? "Su iPhone: tocca il pulsante Condividi (il quadrato con la freccia) e poi «Aggiungi alla schermata Home»."
     : "Su Android: apri il menu del browser (i tre puntini) e tocca «Installa app» o «Aggiungi a schermata Home».";
-  $("#installa-btn").onclick = async () => { if (!promptInstalla) return; promptInstalla.prompt(); await promptInstalla.userChoice; promptInstalla = null; $("#installa-btn").hidden = true; };
+  $("#installa").textContent = testo; $("#installa-passi").textContent = testo;
+  if (promptInstalla) { $("#installa-btn").hidden = false; $("#installa-btn2").hidden = false; }
+  const installa = async () => { if (!promptInstalla) return; promptInstalla.prompt(); await promptInstalla.userChoice; promptInstalla = null; $("#installa-btn").hidden = true; $("#installa-btn2").hidden = true; };
+  $("#installa-btn").onclick = installa; $("#installa-btn2").onclick = installa;
 }
 
 // iscrizione
@@ -277,7 +297,7 @@ $("#modulo").addEventListener("submit", async e => {
     }
     const utente = { nome, email, quando: new Date().toISOString() };
     scrivi("iscritta", utente);
-    mostraApp(utente);
+    mostraPassi(utente);
   } catch {
     err.textContent = "Serve la connessione a internet per l'iscrizione. Riprova tra poco."; err.hidden = false;
   } finally { btn.disabled = false; btn.textContent = "Scarica il calendario"; }
@@ -287,14 +307,14 @@ document.addEventListener("click", e => {
   const b = e.target.closest(".apri"); if (b) { const o = document.getElementById(b.getAttribute("aria-controls")); const ap = o.classList.toggle("aperto"); b.setAttribute("aria-expanded", ap); b.textContent = ap ? "Cosa ti serve ▴" : "Cosa ti serve ▾"; }
   if (e.target.closest(".chiudi")) $("#pop").close();
 });
-$("#ics").onclick = scaricaIcs;
+$("#ics").onclick = () => mostraPassi(leggi("iscritta"));
 $("#esci").onclick = () => { if (confirm("Vuoi uscire? Per rientrare dovrai iscriverti di nuovo.")) { try { localStorage.clear(); } catch {} location.reload(); } };
 
 // avvio
 fetch("usanze.json").then(r => r.json()).then(dati => {
   USANZE = dati;
   const utente = leggi("iscritta");
-  if (utente && utente.nome) mostraApp(utente); else $("#porta").hidden = false;
+  if (utente && utente.nome) (leggi("passi") ? mostraApp(utente) : mostraPassi(utente)); else $("#porta").hidden = false;
 }).catch(() => { document.body.insertAdjacentHTML("afterbegin", '<p class="errore" style="padding:16px">Non riesco a caricare il calendario: controlla la connessione e riapri la pagina.</p>'); });
 
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

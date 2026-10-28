@@ -1,0 +1,1116 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Maria Bonastella//Calendario della nonna//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Il calendario della nonna
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:nonna-1-20261204@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:La nonna: I rami di Santa Barbara
+DESCRIPTION:4 dicembre\, giorno di Santa Barbara. La trovi a pagina 8 del l
+ ibro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta 
+ fortuna per l'anno nuovo. Cosa ti serve: qualche ramo di ciliegio (o di me
+ lo\, pero\, albicocco\, forsizia)\, un vaso\, acqua tiepida\, un coltello.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: I rami di Santa Barbara
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: I rami di Santa Barbara (pagina 8)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-2-20261212@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:La nonna: L'acqua benedetta sugli occhi
+DESCRIPTION:La sera del 12 dicembre\, vigilia di Santa Lucia. La trovi a pa
+ gina 9 del libro «Le tradizioni della nonna per un anno fortunato». Per 
+ cosa: Porta salute alla vista. Cosa ti serve: un poco d'acqua benedetta.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'acqua benedetta sugli occhi
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'acqua benedetta sugli occhi (pagina 9)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-3-20261224@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:La nonna: Il pane della Vigilia
+DESCRIPTION:La sera della Vigilia\, 24 dicembre. La trovi a pagina 10 del l
+ ibro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta 
+ protezione alla casa per tutto l'anno. Cosa ti serve: il pane della cena d
+ ella Vigilia\, un tovagliolo di stoffa pulito.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il pane della Vigilia
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il pane della Vigilia (pagina 10)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-4-20261224@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20270107
+SUMMARY:La nonna: Il ceppo che resta acceso fino all'Epifania
+DESCRIPTION:Dalla sera del 24 dicembre al 6 gennaio. La trovi a pagina 11 d
+ el libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Po
+ rta calore\, unione e protezione alla famiglia. Cosa ti serve: un tronco g
+ rande e stagionato se hai il camino\, oppure una candela grande.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il ceppo che resta acceso fino all'Epifania
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il ceppo che resta acceso fino all'Epifania (pagina 11)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-5-20261224@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:La nonna: Il sacchetto rosso della notte di Natale
+DESCRIPTION:La notte di Natale\, tra il 24 e il 25 dicembre. La trovi a pag
+ ina 12 del libro «Le tradizioni della nonna per un anno fortunato». Per 
+ cosa: Porta salute e protezione ai bambini. Cosa ti serve: un ritaglio di 
+ stoffa rossa e un nastro (o un sacchettino rosso)\, un'immaginetta della M
+ adonna\, un rametto d'ulivo.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il sacchetto rosso della notte di Natale
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il sacchetto rosso della notte di Natale (pagina 12)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-7-20261224@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261227
+SUMMARY:La nonna: L'agrifoglio sopra le finestre
+DESCRIPTION:Nei giorni di Natale. La trovi a pagina 14 del libro «Le tradi
+ zioni della nonna per un anno fortunato». Per cosa: Porta protezione dal 
+ male. Cosa ti serve: qualche rametto d'agrifoglio con le bacche.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'agrifoglio sopra le finestre
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'agrifoglio sopra le finestre (pagina 14)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-6-20261225@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: Il vischio sopra la porta
+DESCRIPTION:Da Natale a Capodanno. La trovi a pagina 13 del libro «Le trad
+ izioni della nonna per un anno fortunato». Per cosa: Porta amore\, fortun
+ a e pace. Cosa ti serve: un rametto di vischio\, un nastro rosso.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il vischio sopra la porta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il vischio sopra la porta (pagina 13)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-8-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: La biancheria rossa\, solo se regalata
+DESCRIPTION:La notte di San Silvestro\, 31 dicembre. La trovi a pagina 15 d
+ el libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Po
+ rta fortuna e prosperità. Cosa ti serve: un capo di biancheria rossa\, ri
+ cevuto in regalo.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La biancheria rossa\, solo se regalata
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La biancheria rossa\, solo se regalata (pagina 15)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-9-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: I dodici chicchi d'uva
+DESCRIPTION:Allo scoccare della mezzanotte del 31 dicembre. La trovi a pagi
+ na 16 del libro «Le tradizioni della nonna per un anno fortunato». Per c
+ osa: Porta fortuna per ognuno dei dodici mesi. Cosa ti serve: dodici acini
+  d'uva a testa\, lavati e staccati dal grappolo\, in una ciotolina per ogn
+ uno.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: I dodici chicchi d'uva
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: I dodici chicchi d'uva (pagina 16)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-10-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: La melagrana aperta sulla tavola
+DESCRIPTION:La notte di San Silvestro\, 31 dicembre. La trovi a pagina 17 d
+ el libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Po
+ rta ricchezza e fortuna. Cosa ti serve: una melagrana matura\, un coltello
+ \, un piatto.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La melagrana aperta sulla tavola
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La melagrana aperta sulla tavola (pagina 17)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-11-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: La candela e la finestra aperta
+DESCRIPTION:Poco prima della mezzanotte del 31 dicembre. La trovi a pagina 
+ 18 del libro «Le tradizioni della nonna per un anno fortunato». Per cosa
+ : Porta fortuna all'anno nuovo. Cosa ti serve: una candela\, i fiammiferi.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La candela e la finestra aperta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La candela e la finestra aperta (pagina 18)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-12-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:La nonna: Il vecchio fuori dalla porta
+DESCRIPTION:A mezzanotte del 31 dicembre. La trovi a pagina 19 del libro «
+ Le tradizioni della nonna per un anno fortunato». Per cosa: Porta spazio 
+ alla fortuna nuova. Cosa ti serve: un oggetto vecchio o rotto\, un sacchet
+ to.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il vecchio fuori dalla porta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il vecchio fuori dalla porta (pagina 19)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-16-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270102
+SUMMARY:La nonna: Niente pollo né gamberi
+DESCRIPTION:Al cenone del 31 dicembre e a pranzo il 1° gennaio. La trovi a
+  pagina 24 del libro «Le tradizioni della nonna per un anno fortunato». 
+ Per cosa: Porta fortuna che non vola via. Cosa ti serve: .
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Niente pollo né gamberi
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Niente pollo né gamberi (pagina 24)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-17-20261231@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270102
+SUMMARY:La nonna: Il maialino di marzapane
+DESCRIPTION:Nei giorni di Capodanno. La trovi a pagina 25 del libro «Le tr
+ adizioni della nonna per un anno fortunato». Per cosa: Porta abbondanza. 
+ Cosa ti serve: un maialino di marzapane.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il maialino di marzapane
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il maialino di marzapane (pagina 25)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-13-20270101@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:La nonna: Le lenticchie del primo dell'anno
+DESCRIPTION:Dopo la mezzanotte o a pranzo il 1° gennaio. La trovi a pagina
+  21 del libro «Le tradizioni della nonna per un anno fortunato». Per cos
+ a: Porta soldi. Cosa ti serve: lenticchie\, cotechino o zampone se vuoi.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Le lenticchie del primo dell'anno
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Le lenticchie del primo dell'anno (pagina 21)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-14-20270101@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:La nonna: Le monete in tasca
+DESCRIPTION:Tutto il giorno del 1° gennaio. La trovi a pagina 22 del libro
+  «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta sold
+ i per tutto l'anno. Cosa ti serve: qualche moneta.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Le monete in tasca
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Le monete in tasca (pagina 22)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-15-20270101@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:La nonna: Il primo dell'anno non si lava
+DESCRIPTION:Il 1° gennaio. La trovi a pagina 23 del libro «Le tradizioni 
+ della nonna per un anno fortunato». Per cosa: Porta fortuna e salute che 
+ restano in casa. Cosa ti serve: .
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il primo dell'anno non si lava
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il primo dell'anno non si lava (pagina 23)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-18-20270105@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270107
+SUMMARY:La nonna: Gabinat\, chi lo dice per primo vince
+DESCRIPTION:Il 5 e il 6 gennaio. La trovi a pagina 26 del libro «Le tradiz
+ ioni della nonna per un anno fortunato». Per cosa: Porta fortuna. Cosa ti
+  serve: qualche dolcetto o un po' di frutta secca da tenere in tasca.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Gabinat\, chi lo dice per primo vince
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Gabinat\, chi lo dice per primo vince (pagina 26)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-20-20270105@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:La nonna: I tredici assaggi per gli animali di casa
+DESCRIPTION:La sera del 5 gennaio\, vigilia dell'Epifania. La trovi a pagin
+ a 28 del libro «Le tradizioni della nonna per un anno fortunato». Per co
+ sa: Porta serenità alla casa. Cosa ti serve: tredici piccoli assaggi adat
+ ti al tuo animale.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: I tredici assaggi per gli animali di casa
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: I tredici assaggi per gli animali di casa (pagina 28)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-19-20270106@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:La nonna: Il pane spezzato sulla testa del più piccolo
+DESCRIPTION:Il 6 gennaio\, giorno dell'Epifania. La trovi a pagina 27 del l
+ ibro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta 
+ fortuna a tutta la casa. Cosa ti serve: una pagnotta rotonda o una focacci
+ a.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il pane spezzato sulla testa del più piccolo
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il pane spezzato sulla testa del più piccolo (pagina 27)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-21-20270117@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:La nonna: La benedizione del tuo animale
+DESCRIPTION:Il 17 gennaio\, giorno di Sant'Antonio abate. La trovi a pagina
+  29 del libro «Le tradizioni della nonna per un anno fortunato». Per cos
+ a: Porta salute ai tuoi animali. Cosa ti serve: il tuo animale\, al guinza
+ glio o nel trasportino.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La benedizione del tuo animale
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La benedizione del tuo animale (pagina 29)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-22-20270202@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:La nonna: La candela benedetta della Candelora
+DESCRIPTION:Il 2 febbraio\, giorno della Candelora. La trovi a pagina 31 de
+ l libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Por
+ ta protezione nei momenti difficili. Cosa ti serve: una candela benedetta 
+ il 2 febbraio.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La candela benedetta della Candelora
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La candela benedetta della Candelora (pagina 31)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-23-20270203@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+SUMMARY:La nonna: L'ultima fetta di panettone per San Biagio
+DESCRIPTION:La mattina del 3 febbraio\, giorno di San Biagio. La trovi a pa
+ gina 32 del libro «Le tradizioni della nonna per un anno fortunato». Per
+  cosa: Porta salute alla gola. Cosa ti serve: un panettone o una fetta ten
+ uti da parte da Natale\, ben chiusi in un sacchetto.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'ultima fetta di panettone per San Biagio
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'ultima fetta di panettone per San Biagio (pagina 32)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-24-20270209@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:La nonna: I dolci fritti del Martedì grasso
+DESCRIPTION:Martedì grasso\, 9 febbraio. La trovi a pagina 33 del libro «
+ Le tradizioni della nonna per un anno fortunato». Per cosa: Porta abbonda
+ nza. Cosa ti serve: gli ingredienti della ricetta di casa (farina\, uova\,
+  zucchero\, olio per friggere).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: I dolci fritti del Martedì grasso
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: I dolci fritti del Martedì grasso (pagina 33)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-25-20270318@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270320
+SUMMARY:La nonna: La tavola di San Giuseppe\, in piccolo
+DESCRIPTION:La sera del 18 e il giorno del 19 marzo. La trovi a pagina 35 d
+ el libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Po
+ rta la grazia alla famiglia. Cosa ti serve: una tovaglia bella\, un'immagi
+ ne di San Giuseppe\, del pane\, un piatto di grano o di legumi\, qualche d
+ olce.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La tavola di San Giuseppe\, in piccolo
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La tavola di San Giuseppe\, in piccolo (pagina 35)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-26-20270321@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:La nonna: Il ramo d'ulivo delle Palme dietro la porta
+DESCRIPTION:Domenica delle Palme\, 21 marzo. La trovi a pagina 36 del libro
+  «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta prot
+ ezione alla casa. Cosa ti serve: un rametto d'ulivo benedetto.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il ramo d'ulivo delle Palme dietro la porta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il ramo d'ulivo delle Palme dietro la porta (pagina 36)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-27-20270322@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270328
+SUMMARY:La nonna: L'uovo benedetto nascosto in casa
+DESCRIPTION:Nella settimana di Pasqua. La trovi a pagina 37 del libro «Le 
+ tradizioni della nonna per un anno fortunato». Per cosa: Porta protezione
+  dai fulmini e dalla grandine. Cosa ti serve: un uovo sodo benedetto il Sa
+ bato Santo\, 27 marzo.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'uovo benedetto nascosto in casa
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'uovo benedetto nascosto in casa (pagina 37)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-31-20270327@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270329
+SUMMARY:La nonna: La cuddura con le uova in numero dispari
+DESCRIPTION:Per Pasqua\, 28 marzo. La trovi a pagina 41 del libro «Le trad
+ izioni della nonna per un anno fortunato». Per cosa: Porta abbondanza. Co
+ sa ti serve: impasto di pane dolce o di frolla\, uova crude con il guscio 
+ (in numero dispari)\, un uovo sbattuto\, codette colorate.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La cuddura con le uova in numero dispari
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La cuddura con le uova in numero dispari (pagina 41)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-28-20270328@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:La nonna: La colazione di Pasqua con l'uovo benedetto
+DESCRIPTION:La mattina di Pasqua\, 28 marzo. La trovi a pagina 38 del libro
+  «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta buon
+  auspicio alla famiglia. Cosa ti serve: uova sode benedette\, pane pasqual
+ e\, qualche fetta di salame.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La colazione di Pasqua con l'uovo benedetto
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La colazione di Pasqua con l'uovo benedetto (pagina 38)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-29-20270328@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270330
+SUMMARY:La nonna: La gara delle uova sode
+DESCRIPTION:Pasqua e Pasquetta\, 28 e 29 marzo. La trovi a pagina 39 del li
+ bro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta f
+ ortuna a chi vince. Cosa ti serve: un uovo sodo a testa.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La gara delle uova sode
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La gara delle uova sode (pagina 39)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-30-20270328@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:La nonna: L'uovo dipinto da conservare
+DESCRIPTION:Pasqua\, 28 marzo. La trovi a pagina 40 del libro «Le tradizio
+ ni della nonna per un anno fortunato». Per cosa: Porta salute e fortuna. 
+ Cosa ti serve: uova sode\, colori alimentari o pennarelli per uova.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'uovo dipinto da conservare
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'uovo dipinto da conservare (pagina 40)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-32-20270420@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270423
+SUMMARY:La nonna: Il rosmarino e la ruta prima di San Giorgio
+DESCRIPTION:Nelle sere prima del 23 aprile\, giorno di San Giorgio. La trov
+ i a pagina 43 del libro «Le tradizioni della nonna per un anno fortunato
+ ». Per cosa: Porta protezione dalla sfortuna. Cosa ti serve: qualche rame
+ tto di rosmarino o di ruta\, una ciotola di terracotta o di metallo\, i fi
+ ammiferi.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il rosmarino e la ruta prima di San Giorgio
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il rosmarino e la ruta prima di San Giorgio (pagina 43)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-33-20270425@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:La nonna: Il bocciolo di rosa di San Marco
+DESCRIPTION:Il 25 aprile\, giorno di San Marco. La trovi a pagina 44 del li
+ bro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta f
+ ortuna in amore. Cosa ti serve: un bocciolo di rosa rossa ancora chiuso\, 
+ un nastrino\, un biglietto.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il bocciolo di rosa di San Marco
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il bocciolo di rosa di San Marco (pagina 44)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-34-20270501@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:La nonna: Il ramo fiorito sulla porta
+DESCRIPTION:La mattina del 1° maggio. La trovi a pagina 46 del libro «Le 
+ tradizioni della nonna per un anno fortunato». Per cosa: Porta abbondanza
+  e salute. Cosa ti serve: un ramo fiorito\, un nastro.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il ramo fiorito sulla porta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il ramo fiorito sulla porta (pagina 46)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-35-20270501@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270601
+SUMMARY:La nonna: L'altarino di maggio
+DESCRIPTION:Per tutto il mese di maggio. La trovi a pagina 47 del libro «L
+ e tradizioni della nonna per un anno fortunato». Per cosa: Porta protezio
+ ne alla casa. Cosa ti serve: un'immagine della Madonna\, fiori freschi\, u
+ na candela\, una mensola.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'altarino di maggio
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'altarino di maggio (pagina 47)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-36-20270522@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:La nonna: La rosa di Santa Rita in un cassetto
+DESCRIPTION:Il 22 maggio\, giorno di Santa Rita. La trovi a pagina 48 del l
+ ibro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta 
+ aiuto nei momenti difficili. Cosa ti serve: una rosa benedetta.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La rosa di Santa Rita in un cassetto
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La rosa di Santa Rita in un cassetto (pagina 48)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-37-20270613@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270613
+DTEND;VALUE=DATE:20270614
+SUMMARY:La nonna: Il pane di Sant'Antonio da dividere
+DESCRIPTION:Il 13 giugno\, giorno di Sant'Antonio. La trovi a pagina 50 del
+  libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Port
+ a protezione ai figli. Cosa ti serve: del pane buono.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il pane di Sant'Antonio da dividere
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il pane di Sant'Antonio da dividere (pagina 50)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-38-20270623@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+SUMMARY:La nonna: L'acqua di San Giovanni
+DESCRIPTION:La notte tra il 23 e il 24 giugno. La trovi a pagina 51 del lib
+ ro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta sa
+ lute e bellezza. Cosa ti serve: una bacinella\, acqua\, fiori ed erbe di c
+ ampo o del giardino.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'acqua di San Giovanni
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'acqua di San Giovanni (pagina 51)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-39-20270623@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+SUMMARY:La nonna: Il mazzetto di San Giovanni da tenere un anno
+DESCRIPTION:La notte tra il 23 e il 24 giugno. La trovi a pagina 52 del lib
+ ro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta pr
+ otezione dalla sfortuna. Cosa ti serve: fiori ed erbe aromatiche (iperico\
+ , lavanda\, rosmarino\, salvia)\, uno spago o un nastro.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il mazzetto di San Giovanni da tenere un anno
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il mazzetto di San Giovanni da tenere un anno (pagina 52)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-40-20270624@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:La nonna: L'aglio di San Giovanni
+DESCRIPTION:Il 24 giugno\, giorno di San Giovanni. La trovi a pagina 53 del
+  libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Port
+ a soldi e protezione. Cosa ti serve: una testa o una treccia d'aglio nuovo
+ .
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: L'aglio di San Giovanni
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: L'aglio di San Giovanni (pagina 53)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-41-20270716@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:La nonna: Lo scapolare della Madonna del Carmine
+DESCRIPTION:Il 16 luglio\, festa della Madonna del Carmine. La trovi a pagi
+ na 55 del libro «Le tradizioni della nonna per un anno fortunato». Per c
+ osa: Porta protezione. Cosa ti serve: uno scapolare.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Lo scapolare della Madonna del Carmine
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Lo scapolare della Madonna del Carmine (pagina 55)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-42-20270722@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270723
+SUMMARY:La nonna: Il bagno di lavanda per il neonato
+DESCRIPTION:Il 22 luglio\, giorno di Santa Maria Maddalena. La trovi a pagi
+ na 56 del libro «Le tradizioni della nonna per un anno fortunato». Per c
+ osa: Porta protezione al neonato. Cosa ti serve: qualche rametto di lavand
+ a\, l'acqua del bagnetto.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il bagno di lavanda per il neonato
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il bagno di lavanda per il neonato (pagina 56)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-43-20270810@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270810
+DTEND;VALUE=DATE:20270811
+SUMMARY:La nonna: Il desiderio della notte di San Lorenzo
+DESCRIPTION:La notte del 10 agosto. La trovi a pagina 58 del libro «Le tra
+ dizioni della nonna per un anno fortunato». Per cosa: Porta un desiderio 
+ che si avvera. Cosa ti serve: una coperta\, un posto lontano dalle luci\, 
+ un po' di pazienza.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il desiderio della notte di San Lorenzo
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il desiderio della notte di San Lorenzo (pagina 58)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-44-20270815@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:La nonna: Il mazzo d'erbe dell'Assunta
+DESCRIPTION:Il 15 agosto\, giorno dell'Assunta. La trovi a pagina 59 del li
+ bro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta s
+ alute e protezione. Cosa ti serve: sette\, nove o dodici erbe e fiori dive
+ rsi\, uno spago.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il mazzo d'erbe dell'Assunta
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il mazzo d'erbe dell'Assunta (pagina 59)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-45-20270901@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:La nonna: Il bagno del primo settembre
+DESCRIPTION:La mattina del 1° settembre. La trovi a pagina 61 del libro «
+ Le tradizioni della nonna per un anno fortunato». Per cosa: Porta salute 
+ per l'inverno. Cosa ti serve: il costume\, un asciugamano.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Il bagno del primo settembre
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Il bagno del primo settembre (pagina 61)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-46-20270917@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270918
+SUMMARY:La nonna: Venerdì 17\, cosa non si fa
+DESCRIPTION:Venerdì 17 settembre (e venerdì 17 dicembre). La trovi a pagi
+ na 62 del libro «Le tradizioni della nonna per un anno fortunato». Per c
+ osa: Porta protezione dalla sfortuna. Cosa ti serve: .
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Venerdì 17\, cosa non si fa
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Venerdì 17\, cosa non si fa (pagina 62)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-47-20271004@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+SUMMARY:La nonna: La benedizione degli animali di San Francesco
+DESCRIPTION:Il 4 ottobre\, giorno di San Francesco. La trovi a pagina 64 de
+ l libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Por
+ ta salute ai tuoi animali. Cosa ti serve: il tuo animale\, al guinzaglio o
+  nel trasportino.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La benedizione degli animali di San Francesco
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La benedizione degli animali di San Francesco (pagina 64)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-48-20271025@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20271025
+DTEND;VALUE=DATE:20271101
+SUMMARY:La nonna: La castagna matta in tasca
+DESCRIPTION:A fine ottobre\, quando cadono le castagne. La trovi a pagina 6
+ 5 del libro «Le tradizioni della nonna per un anno fortunato». Per cosa:
+  Porta salute. Cosa ti serve: una castagna matta (il frutto dell'ippocasta
+ no\, non si mangia).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La castagna matta in tasca
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La castagna matta in tasca (pagina 65)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-49-20271101@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:La nonna: La tavola apparecchiata per le anime
+DESCRIPTION:La notte tra il 1° e il 2 novembre. La trovi a pagina 67 del l
+ ibro «Le tradizioni della nonna per un anno fortunato». Per cosa: Porta 
+ serenità e buona sorte alla famiglia. Cosa ti serve: una tovaglia bella\,
+  pane\, qualche dolce\, un lumino.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: La tavola apparecchiata per le anime
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: La tavola apparecchiata per le anime (pagina 67)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-50-20271204@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20271204
+DTEND;VALUE=DATE:20271205
+SUMMARY:La nonna: I rami di Santa Barbara per il 2028
+DESCRIPTION:Il 4 dicembre\, giorno di Santa Barbara. La trovi a pagina 69 d
+ el libro «Le tradizioni della nonna per un anno fortunato». Per cosa: Po
+ rta fortuna per l'anno nuovo. Cosa ti serve: qualche ramo di ciliegio o di
+  un albero da frutto\, un vaso\, acqua tiepida.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: I rami di Santa Barbara per il 2028
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: I rami di Santa Barbara per il 2028 (pagina 69)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nonna-46-20271217@libridaleggere.github.io
+DTSTAMP:20261028T223218Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:La nonna: Venerdì 17\, cosa non si fa
+DESCRIPTION:Venerdì 17 settembre (e venerdì 17 dicembre). La trovi a pagi
+ na 62 del libro «Le tradizioni della nonna per un anno fortunato». Per c
+ osa: Porta protezione dalla sfortuna. Cosa ti serve: .
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Domani: Venerdì 17\, cosa non si fa
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oggi: Venerdì 17\, cosa non si fa (pagina 62)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
