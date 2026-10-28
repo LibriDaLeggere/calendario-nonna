@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="it"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Il calendario della nonna</title>
+<meta name="description" content="Il calendario delle usanze di buon auspicio del libro «Le tradizioni della nonna per un anno fortunato»: ti avvisa quando arriva la prossima usanza.">
+<meta name="theme-color" content="#5a3a24">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icona-192.png">
+<link rel="apple-touch-icon" href="icona-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="La nonna">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Alegreya+Sans:wght@400;700&family=Dancing+Script:wght@600&display=swap">
+<style>
+/* Layout: app a colonna singola per telefono. Due viste: «porta» (iscrizione obbligatoria) e «calendario»
+   (saluto, prossima usanza, elenco, tutto l'anno per mese, impostazioni). Il pop-up di oggi/domani si apre sopra. */
+:root{--carta:#f3ece1;--tavola:#fffaf2;--inchiostro:#2c2320;--tenue:#6f5f55;--filo:#e0d3c1;--accento:#8a4b1f;--tela:#5a3a24;--oro:#c9973f;--nonna:#4a2a17;
+  --ui:"Alegreya Sans",system-ui,sans-serif;--uid:"Alegreya",Georgia,serif;--mano:"Dancing Script",cursive}
+@media (prefers-color-scheme:dark){:root{--carta:#1d1816;--tavola:#272120;--inchiostro:#f1e7da;--tenue:#bba999;--filo:#3d3431;--accento:#e0a46c;--nonna:#e7c79a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--ui);font-size:17px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:560px;margin:0 auto;padding:calc(env(safe-area-inset-top,0px) + 20px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 40px) max(16px,env(safe-area-inset-left,0px));display:grid;gap:22px}
+h1{font-family:var(--uid);font-size:30px;line-height:1.1;margin:0}
+h2{font-family:var(--uid);font-size:22px;margin:0}
+p{margin:0}
+.nota{font-size:15px;color:var(--tenue)}
+.mano{font-family:var(--mano);color:var(--nonna);font-size:23px;line-height:1.25}
+.testa{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}
+.testa img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--tavola);box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.scheda{background:var(--tavola);border:1px solid var(--filo);border-radius:10px;padding:16px;display:grid;gap:8px}
+.scheda.evid{border-left:5px solid var(--accento)}
+.quando{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accento)}
+.tit{font-family:var(--uid);font-size:20px;font-weight:700;line-height:1.2}
+.pag{font-size:15px;color:var(--tenue)}
+form{display:grid;gap:14px}
+label.campo{display:grid;gap:4px;font-weight:700;font-size:15px}
+input[type=text],input[type=email]{font:inherit;font-size:17px;padding:12px 14px;border-radius:8px;border:1px solid var(--filo);background:var(--tavola);color:var(--inchiostro)}
+input:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--oro);outline-offset:2px}
+label.spunta{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:15px;align-items:start}
+label.spunta input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--accento)}
+.btn{font:700 17px var(--ui);padding:14px 18px;border-radius:999px;border:0;background:var(--accento);color:#fff;cursor:pointer;text-align:center;text-decoration:none;display:block}
+.btn.chiaro{background:var(--tavola);color:var(--inchiostro);border:1px solid var(--filo)}
+.btn[disabled]{opacity:.6}
+.errore{color:#b3261e;font-weight:700;font-size:15px}
+.esca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+details.mese{background:var(--tavola);border:1px solid var(--filo);border-radius:10px}
+details.mese summary{padding:14px 16px;font-family:var(--uid);font-weight:700;font-size:18px;cursor:pointer}
+details.mese ul{list-style:none;margin:0;padding:0 16px 12px;display:grid;gap:10px}
+details.mese li{display:grid;gap:2px;border-top:1px solid var(--filo);padding-top:10px}
+.riga{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.interr{position:relative;width:52px;height:30px;flex:none}
+.interr input{opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.interr span{position:absolute;inset:0;border-radius:999px;background:var(--filo);pointer-events:none;transition:background .2s}
+.interr span::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.interr input:checked+span{background:var(--accento)}
+.interr input:checked+span::after{transform:translateX(22px)}
+.occ{display:none;gap:6px;font-size:15.5px}
+.occ.aperto{display:grid}
+.apri{font:700 15px var(--ui);background:none;border:0;color:var(--accento);padding:4px 0;cursor:pointer;justify-self:start}
+dialog{border:0;border-radius:14px;padding:0;max-width:min(480px,calc(100vw - 32px));width:100%;background:var(--tavola);color:var(--inchiostro);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(40,25,15,.55)}
+.pop{padding:18px;display:grid;gap:14px}
+.pop .chiudi{justify-self:end;font:700 22px var(--ui);background:none;border:0;color:var(--tenue);cursor:pointer;line-height:1;padding:4px 8px;margin:-6px -6px -10px 0}
+footer{display:grid;gap:8px;justify-items:center;font-size:14px;color:var(--tenue);text-align:center}
+footer a,footer button{color:var(--tenue);font:inherit;background:none;border:0;text-decoration:underline;cursor:pointer}
+.avviso-prova{background:#fff3cd;color:#5c4400;border-radius:8px;padding:10px 12px;font-size:14px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- PORTA: iscrizione obbligatoria -->
+  <section id="porta" hidden>
+    <div style="display:grid;gap:18px">
+      <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1>Il calendario della nonna</h1><p class="nota">dal libro «Le tradizioni della nonna per un anno fortunato»</p></div></div>
+      <p>Il calendario ti avvisa quando arriva la prossima usanza, ti dice a che pagina del libro trovarla e cosa ti serve per farla. Per scaricarlo lascia il tuo nome e la tua email.</p>
+      <form id="modulo" novalidate>
+        <label class="campo">Nome<input type="text" name="nome" autocomplete="given-name" required maxlength="80"></label>
+        <label class="campo">Email<input type="email" name="email" autocomplete="email" required maxlength="120" inputmode="email"></label>
+        <label class="esca" aria-hidden="true">Sito<input type="text" name="sito" tabindex="-1" autocomplete="off"></label>
+        <label class="spunta"><input type="checkbox" name="privacy" required><span>Ho letto l'<a href="privacy.html">informativa sulla privacy</a> e accetto che i miei dati siano usati per darmi accesso al calendario. <b>(obbligatorio)</b></span></label>
+        <label class="spunta"><input type="checkbox" name="marketing"><span>Voglio ricevere via email le novità sui prossimi libri di Maria Bonastella. (facoltativo)</span></label>
+        <p id="errore" class="errore" role="alert" hidden></p>
+        <button class="btn" id="invia" type="submit">Scarica il calendario</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CALENDARIO -->
+  <section id="app" hidden style="display:grid;gap:22px">
+    <div class="testa"><img src="bonaria.jpg" alt="Nonna Bonaria"><div><h1 id="saluto">Ciao!</h1><p class="nota">Il calendario della nonna</p></div></div>
+    <p id="prova" class="avviso-prova" hidden></p>
+
+    <div id="prossima" class="scheda evid"></div>
+
+    <div style="display:grid;gap:10px">
+      <h2>Le prossime usanze</h2>
+      <div id="elenco" style="display:grid;gap:10px"></div>
+    </div>
+
+    <div style="display:grid;gap:10px">
+      <h2>Tutto l'anno</h2>
+      <div id="mesi" style="display:grid;gap:8px"></div>
+    </div>
+
+    <div class="scheda" style="gap:14px">
+      <h2>Gli avvisi</h2>
+      <div class="riga"><div><b>Il plin</b><p class="nota">Un piccolo suono quando si apre l'avviso del giorno.</p></div>
+        <label class="interr"><input type="checkbox" id="plin" aria-label="Suono plin"><span></span></label></div>
+      <div style="display:grid;gap:8px">
+        <b>Avvisi sul telefono</b>
+        <p class="nota">Aggiungi tutte le usanze al calendario del telefono: ti arriva un promemoria la sera prima alle 18 e la mattina alle 9, anche ad app chiusa.</p>
+        <button class="btn" id="ics" type="button">Aggiungi al calendario del telefono</button>
+      </div>
+      <div style="display:grid;gap:6px">
+        <b>Metti l'app nella schermata Home</b>
+        <p class="nota" id="installa"></p>
+        <button class="btn chiaro" id="installa-btn" type="button" hidden>Installa l'app</button>
+      </div>
+    </div>
+
+    <a class="btn chiaro" id="recensione" hidden target="_blank" rel="noopener">Ti è piaciuto il libro? Lascia una recensione su Amazon</a>
+
+    <footer>
+      <p>Le usanze sono di buon auspicio e appartengono alla tradizione popolare italiana.</p>
+      <p><a href="privacy.html">Privacy</a> · <button id="esci" type="button">Esci da questo telefono</button></p>
+    </footer>
+  </section>
+</div>
+
+<!-- pop-up di oggi / domani -->
+<dialog id="pop" aria-labelledby="pop-tit"><div class="pop">
+  <button class="chiudi" type="button" aria-label="Chiudi">×</button>
+  <div id="pop-corpo" style="display:grid;gap:16px"></div>
+</div></dialog>
+
+<script>
+/* ===== da compilare ===== */
+const ISCRIZIONI_URL = "https://script.google.com/macros/s/AKfycbxKrKKLw5fdLvzET2q0C6FYNtqhgQGaN5Mys1mEkO4KssrTM0gSq6f-Mc6Y8Wh6wvHD/exec";   // indirizzo dell'App web di Google Apps Script (finisce con /exec)
+const ASIN = "";             // codice Amazon del libro, dopo la pubblicazione: attiva il pulsante recensione
+/* ======================== */
+
+const $ = s => document.querySelector(s);
+const MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+const GIORNI = ["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"];
+const leggi = k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
+const scrivi = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// «oggi» si può forzare per le prove: ?oggi=2026-12-04
+const qOggi = new URLSearchParams(location.search).get("oggi");
+const OGGI = qOggi && /^\d{4}-\d{2}-\d{2}$/.test(qOggi) ? qOggi : new Date(Date.now() - new Date().getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+const piu = (iso, n) => { const d = new Date(iso + "T12:00:00"); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+const DOMANI = piu(OGGI, 1);
+const bello = iso => { const d = new Date(iso + "T12:00:00"); return `${GIORNI[d.getDay()]} ${d.getDate()} ${MESI[d.getMonth()]}`; };
+const corto = iso => { const d = new Date(iso + "T12:00:00"); return `${d.getDate()} ${MESI[d.getMonth()]}`; };
+const fine = u => u.fine || u.data;
+const giorniA = iso => Math.round((new Date(iso + "T12:00:00") - new Date(OGGI + "T12:00:00")) / 864e5);
+
+let USANZE = [];
+
+function cartaUsanza(u, etichetta, evid) {
+  const id = "o" + u.scheda + u.data;
+  return `<div class="scheda${evid ? " evid" : ""}">
+    <span class="quando">${esc(etichetta)}</span>
+    <span class="tit">${esc(u.titolo)}</span>
+    <span>${esc(u.quando)}</span>
+    <span class="pag">La trovi a pagina <b>${u.pagina}</b> del libro</span>
+    <button class="apri" type="button" aria-expanded="false" aria-controls="${id}">Cosa ti serve ▾</button>
+    <div class="occ" id="${id}">
+      <span><b>Per cosa:</b> ${esc(u.per_cosa)}</span>
+      <span><b>Per chi:</b> ${esc(u.per_chi)}</span>
+      <span><b>Cosa ti serve:</b> ${esc(u.occorrente)}</span>
+    </div></div>`;
+}
+
+function mostraApp(utente) {
+  $("#porta").hidden = true; $("#app").hidden = false;
+  $("#saluto").textContent = `Ciao, ${utente.nome}!`;
+  if (qOggi) { $("#prova").hidden = false; $("#prova").textContent = `Modalità prova: oggi è ${bello(OGGI)}.`; }
+
+  const oggi = USANZE.filter(u => u.data === OGGI);   // solo quelle che cominciano oggi: le usanze di più giorni restano nel calendario
+  const domani = USANZE.filter(u => u.data === DOMANI);
+  const future = USANZE.filter(u => u.data > OGGI);
+
+  // prossima usanza
+  if (oggi.length) $("#prossima").innerHTML = `<span class="quando">Oggi · ${bello(OGGI)}</span><span class="tit">${oggi.map(u => esc(u.titolo)).join(" · ")}</span><span class="pag">Pagina ${oggi.map(u => u.pagina).join(", ")} del libro</span>`;
+  else if (future.length) { const p = future[0], g = giorniA(p.data);
+    $("#prossima").innerHTML = `<span class="quando">${g === 1 ? "Domani" : `Tra ${g} giorni`} · ${bello(p.data)}</span><span class="tit">${esc(p.titolo)}</span><span class="pag">La trovi a pagina ${p.pagina} del libro</span>`; }
+  else $("#prossima").innerHTML = `<span class="tit">Le usanze di questo calendario sono finite.</span><span class="pag">Si ricomincia con i rami di Santa Barbara!</span>`;
+
+  $("#elenco").innerHTML = future.slice(0, 5).map(u => cartaUsanza(u, bello(u.data), false)).join("") || `<p class="nota">Nessuna usanza in arrivo.</p>`;
+
+  // tutto l'anno, per mese
+  const perMese = {};
+  USANZE.forEach(u => { const k = u.data.slice(0, 7); (perMese[k] = perMese[k] || []).push(u); });
+  $("#mesi").innerHTML = Object.keys(perMese).sort().map(k => {
+    const [a, m] = k.split("-"); const aperto = k === OGGI.slice(0, 7) ? " open" : "";
+    return `<details class="mese"${aperto}><summary>${MESI[+m - 1][0].toUpperCase() + MESI[+m - 1].slice(1)} ${a}</summary><ul>${
+      perMese[k].map(u => `<li><span class="quando">${corto(u.data)}${u.fine ? " – " + corto(u.fine) : ""}</span><span class="tit" style="font-size:17px">${esc(u.titolo)}</span><span class="pag">pagina ${u.pagina}</span></li>`).join("")}</ul></details>`;
+  }).join("");
+
+  // impostazioni
+  $("#plin").checked = !!leggi("plin");
+  $("#plin").onchange = e => { scrivi("plin", e.target.checked); if (e.target.checked) suona(); };
+  if (ASIN) { const r = $("#recensione"); r.hidden = false; r.href = `https://www.amazon.it/review/create-review?asin=${ASIN}`; }
+  istruzioniInstalla();
+
+  // pop-up: una volta al giorno, se oggi o domani c'è un'usanza
+  if ((oggi.length || domani.length) && leggi("visto") !== OGGI) apriPop(oggi, domani);
+}
+
+function apriPop(oggi, domani) {
+  let h = "";
+  if (oggi.length) h += `<h2 id="pop-tit">Oggi c'è un'usanza</h2>` + oggi.map(u => cartaUsanza(u, "Oggi · " + bello(OGGI), true)).join("");
+  if (domani.length) h += (oggi.length ? "" : `<h2 id="pop-tit">Domani c'è un'usanza</h2>`) + domani.map(u => cartaUsanza(u, "Domani · " + bello(DOMANI), !oggi.length)).join("");
+  $("#pop-corpo").innerHTML = h;
+  const d = $("#pop"); d.showModal(); scrivi("visto", OGGI);
+  if (leggi("plin")) suona();
+}
+
+// il plin: i browser permettono il suono solo dopo un tocco, quindi se è bloccato suona al primo tocco
+const audio = new Audio("plin.wav");
+function suona() {
+  audio.currentTime = 0;
+  audio.play().catch(() => document.addEventListener("pointerdown", () => { audio.currentTime = 0; audio.play().catch(() => {}); }, { once: true }));
+}
+
+// calendario del telefono (.ics) con due promemoria
+function scaricaIcs() {
+  const ora = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+  const piatta = s => String(s).replace(/\\/g, "\\\\").replace(/[,;]/g, m => "\\" + m).replace(/\n/g, "\\n");
+  const righe = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Maria Bonastella//Calendario della nonna//IT", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Il calendario della nonna"];
+  USANZE.filter(u => fine(u) >= OGGI).forEach(u => {
+    const ini = u.data.replace(/-/g, ""), fin = piu(fine(u), 1).replace(/-/g, "");
+    const desc = `${u.quando}. Lo trovi a pagina ${u.pagina} del libro «Le tradizioni della nonna per un anno fortunato». Per cosa: ${u.per_cosa}. Cosa ti serve: ${u.occorrente}.`;
+    righe.push("BEGIN:VEVENT", `UID:nonna-${u.scheda}-${ini}@calendario-nonna`, `DTSTAMP:${ora}`, `DTSTART;VALUE=DATE:${ini}`, `DTEND;VALUE=DATE:${fin}`,
+      `SUMMARY:${piatta("La nonna: " + u.titolo)}`, `DESCRIPTION:${piatta(desc)}`, "TRANSP:TRANSPARENT",
+      "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${piatta("Domani: " + u.titolo)}`, "TRIGGER:-PT6H", "END:VALARM",
+      "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${piatta("Oggi: " + u.titolo + " (pagina " + u.pagina + ")")}`, "TRIGGER:PT9H", "END:VALARM",
+      "END:VEVENT");
+  });
+  righe.push("END:VCALENDAR");
+  // le righe lunghe vanno spezzate a 75 caratteri (regola del formato .ics)
+  const testo = righe.map(r => r.length <= 74 ? r : r.match(/.{1,73}/g).join("\r\n ")).join("\r\n");
+  const url = URL.createObjectURL(new Blob([testo], { type: "text/calendar;charset=utf-8" }));
+  const a = Object.assign(document.createElement("a"), { href: url, download: "calendario-della-nonna.ics" });
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+
+let promptInstalla = null;
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); promptInstalla = e; const b = $("#installa-btn"); if (b) b.hidden = false; });
+function istruzioniInstalla() {
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const giaInstallata = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  $("#installa").textContent = giaInstallata ? "Fatto: l'app è già sulla schermata Home."
+    : ios ? "Su iPhone: tocca il pulsante Condividi (il quadrato con la freccia) e poi «Aggiungi alla schermata Home»."
+    : "Su Android: apri il menu del browser (i tre puntini) e tocca «Installa app» o «Aggiungi a schermata Home».";
+  $("#installa-btn").onclick = async () => { if (!promptInstalla) return; promptInstalla.prompt(); await promptInstalla.userChoice; promptInstalla = null; $("#installa-btn").hidden = true; };
+}
+
+// iscrizione
+$("#modulo").addEventListener("submit", async e => {
+  e.preventDefault();
+  const f = e.target, err = $("#errore"), btn = $("#invia");
+  const nome = f.nome.value.trim(), email = f.email.value.trim();
+  err.hidden = true;
+  const sbaglio = !nome ? "Scrivi il tuo nome." : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? "Controlla l'indirizzo email." : !f.privacy.checked ? "Per scaricare il calendario devi accettare l'informativa sulla privacy." : "";
+  if (sbaglio) { err.textContent = sbaglio; err.hidden = false; return; }
+  btn.disabled = true; btn.textContent = "Un attimo…";
+  try {
+    if (ISCRIZIONI_URL) {
+      const dati = new URLSearchParams({ nome, email, privacy: "si", marketing: f.marketing.checked ? "si" : "no", origine: "qr-libro", sito: f.sito.value });
+      await fetch(ISCRIZIONI_URL, { method: "POST", mode: "no-cors", body: dati });
+    }
+    const utente = { nome, email, quando: new Date().toISOString() };
+    scrivi("iscritta", utente);
+    mostraApp(utente);
+  } catch {
+    err.textContent = "Serve la connessione a internet per l'iscrizione. Riprova tra poco."; err.hidden = false;
+  } finally { btn.disabled = false; btn.textContent = "Scarica il calendario"; }
+});
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".apri"); if (b) { const o = document.getElementById(b.getAttribute("aria-controls")); const ap = o.classList.toggle("aperto"); b.setAttribute("aria-expanded", ap); b.textContent = ap ? "Cosa ti serve ▴" : "Cosa ti serve ▾"; }
+  if (e.target.closest(".chiudi")) $("#pop").close();
+});
+$("#ics").onclick = scaricaIcs;
+$("#esci").onclick = () => { if (confirm("Vuoi uscire? Per rientrare dovrai iscriverti di nuovo.")) { try { localStorage.clear(); } catch {} location.reload(); } };
+
+// avvio
+fetch("usanze.json").then(r => r.json()).then(dati => {
+  USANZE = dati;
+  const utente = leggi("iscritta");
+  if (utente && utente.nome) mostraApp(utente); else $("#porta").hidden = false;
+}).catch(() => { document.body.insertAdjacentHTML("afterbegin", '<p class="errore" style="padding:16px">Non riesco a caricare il calendario: controlla la connessione e riapri la pagina.</p>'); });
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+</script>
+</body></html>
