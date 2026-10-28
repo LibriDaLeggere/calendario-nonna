@@ -1,0 +1,46 @@
+# Ogni mattina alle 7:00 UTC (8:00 d'inverno, 9:00 d'estate in Italia) manda le notifiche delle usanze di oggi e di domani.
+# Si può lanciare anche a mano da GitHub: Actions → Notifiche di Bonaria → Run workflow (con «prova» per una notifica di prova).
+name: Notifiche di Bonaria
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: "Manda una notifica di prova a tutti i telefoni iscritti"
+        type: boolean
+        default: false
+      oggi:
+        description: "Fai finta che oggi sia (AAAA-MM-GG), per le prove"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  invia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --prefix notifiche --no-audit --no-fund
+      - run: node notifiche/invia.mjs
+        env:
+          VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}
+          NOTIFICHE_TOKEN: ${{ secrets.NOTIFICHE_TOKEN }}
+          PROVA: ${{ inputs.prova && '1' || '' }}
+          OGGI: ${{ inputs.oggi }}
+      # tiene traccia degli invii; il salvataggio tiene anche attivo il programma (GitHub sospende quelli fermi da 60 giorni)
+      - name: Salva il registro
+        run: |
+          if [ -n "$(git status --porcelain notifiche/registro.txt)" ]; then
+            git config user.name "Bonaria"
+            git config user.email "bonastella.maria.mail@gmail.com"
+            git add notifiche/registro.txt
+            git commit -m "Notifiche del $(date -u +%F)"
+            git push
+          fi
