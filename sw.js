@@ -1,5 +1,5 @@
 // Tiene l'app disponibile anche senza connessione e mostra le notifiche. Cambiare VERSIONE a ogni aggiornamento dei file.
-const VERSIONE = "nonna-v5";
+const VERSIONE = "nonna-v8";
 const FILE = ["./", "index.html", "usanze.json", "bonaria.jpg", "icona-180.png", "icona-192.png", "icona-512.png", "manifest.webmanifest", "privacy.html"];
 
 self.addEventListener("install", e => {
