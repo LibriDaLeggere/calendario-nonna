@@ -5,7 +5,7 @@
   "titolo": "I rami di Santa Barbara",
   "pagina": 8,
   "scheda": 1,
-  "per_cosa": "Porta fortuna per l'anno nuovo",
+  "per_cosa": "Per augurare fortuna all'anno nuovo",
   "per_chi": "Da sola, in coppia o con la famiglia",
   "occorrente": "qualche ramo di ciliegio (o di melo, pero, albicocco, forsizia), un vaso, acqua tiepida, un coltello",
   "data": "2026-12-04"
@@ -16,9 +16,9 @@
   "titolo": "L'acqua benedetta sugli occhi",
   "pagina": 9,
   "scheda": 2,
-  "per_cosa": "Porta salute alla vista",
+  "per_cosa": "Per chiedere protezione per la vista",
   "per_chi": "Da sola o con la famiglia",
-  "occorrente": "un poco d'acqua benedetta",
+  "occorrente": "un po' d'acqua benedetta",
   "data": "2026-12-12"
  },
  {
@@ -27,7 +27,7 @@
   "titolo": "Il pane della Vigilia",
   "pagina": 10,
   "scheda": 3,
-  "per_cosa": "Porta protezione alla casa per tutto l'anno",
+  "per_cosa": "Per proteggere la casa tutto l'anno",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "il pane della cena della Vigilia, un tovagliolo di stoffa pulito",
   "data": "2026-12-24"
@@ -38,9 +38,9 @@
   "titolo": "Il ceppo che resta acceso fino all'Epifania",
   "pagina": 11,
   "scheda": 4,
-  "per_cosa": "Porta calore, unione e protezione alla famiglia",
+  "per_cosa": "Per augurare calore, unione e protezione alla famiglia",
   "per_chi": "Con la famiglia",
-  "occorrente": "un tronco grande e stagionato se hai il camino, oppure una candela grande",
+  "occorrente": "un ceppo grande e stagionato se hai il camino, oppure una candela grande",
   "data": "2026-12-24",
   "fine": "2027-01-06"
  },
@@ -50,7 +50,7 @@
   "titolo": "Il sacchetto rosso della notte di Natale",
   "pagina": 12,
   "scheda": 5,
-  "per_cosa": "Porta salute e protezione ai bambini",
+  "per_cosa": "Per proteggere la salute dei bambini",
   "per_chi": "Per i bambini di casa, o per te",
   "occorrente": "un ritaglio di stoffa rossa e un nastro (o un sacchettino rosso), un'immaginetta della Madonna, un rametto d'ulivo",
   "data": "2026-12-24"
@@ -61,7 +61,7 @@
   "titolo": "L'agrifoglio sopra le finestre",
   "pagina": 14,
   "scheda": 7,
-  "per_cosa": "Porta protezione dal male",
+  "per_cosa": "Per tenere lontano il male",
   "per_chi": "Da sola",
   "occorrente": "qualche rametto d'agrifoglio con le bacche",
   "data": "2026-12-24",
@@ -73,7 +73,7 @@
   "titolo": "Il vischio sopra la porta",
   "pagina": 13,
   "scheda": 6,
-  "per_cosa": "Porta amore, fortuna e pace",
+  "per_cosa": "Per augurare amore, fortuna e pace",
   "per_chi": "In coppia",
   "occorrente": "un rametto di vischio, un nastro rosso",
   "data": "2026-12-25",
@@ -85,7 +85,7 @@
   "titolo": "La biancheria rossa, solo se regalata",
   "pagina": 15,
   "scheda": 8,
-  "per_cosa": "Porta fortuna e prosperità",
+  "per_cosa": "Per augurare fortuna e prosperità",
   "per_chi": "In coppia, o tra amiche",
   "occorrente": "un capo di biancheria rossa, ricevuto in regalo",
   "data": "2026-12-31"
@@ -96,9 +96,9 @@
   "titolo": "I dodici chicchi d'uva",
   "pagina": 16,
   "scheda": 9,
-  "per_cosa": "Porta fortuna per ognuno dei dodici mesi",
+  "per_cosa": "Per augurare fortuna a ognuno dei dodici mesi",
   "per_chi": "Da sola, in coppia o con gli amici",
-  "occorrente": "dodici acini d'uva a testa, lavati e staccati dal grappolo, in una ciotolina per ognuno",
+  "occorrente": "dodici chicchi d'uva a testa, lavati e staccati dal grappolo, in una ciotolina per ognuno",
   "data": "2026-12-31"
  },
  {
@@ -107,7 +107,7 @@
   "titolo": "La melagrana aperta sulla tavola",
   "pagina": 17,
   "scheda": 10,
-  "per_cosa": "Porta ricchezza e fortuna",
+  "per_cosa": "Per augurare ricchezza e fortuna",
   "per_chi": "Con la famiglia o con gli amici",
   "occorrente": "una melagrana matura, un coltello, un piatto",
   "data": "2026-12-31"
@@ -118,7 +118,7 @@
   "titolo": "La candela e la finestra aperta",
   "pagina": 18,
   "scheda": 11,
-  "per_cosa": "Porta fortuna all'anno nuovo",
+  "per_cosa": "Per accogliere la fortuna dell'anno nuovo",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "una candela, i fiammiferi",
   "data": "2026-12-31"
@@ -129,7 +129,7 @@
   "titolo": "Il vecchio fuori dalla porta",
   "pagina": 19,
   "scheda": 12,
-  "per_cosa": "Porta spazio alla fortuna nuova",
+  "per_cosa": "Per fare spazio alla fortuna dell'anno nuovo",
   "per_chi": "Con la famiglia",
   "occorrente": "un oggetto vecchio o rotto, un sacchetto",
   "data": "2026-12-31"
@@ -140,7 +140,7 @@
   "titolo": "Niente pollo né gamberi",
   "pagina": 24,
   "scheda": 16,
-  "per_cosa": "Porta fortuna che non vola via",
+  "per_cosa": "Per non far volare via la fortuna",
   "per_chi": "Una regola per il menù delle feste",
   "occorrente": "",
   "data": "2026-12-31",
@@ -152,9 +152,9 @@
   "titolo": "Il maialino di marzapane",
   "pagina": 25,
   "scheda": 17,
-  "per_cosa": "Porta abbondanza",
+  "per_cosa": "Per augurare abbondanza",
   "per_chi": "Da regalare a chi vuoi bene",
-  "occorrente": "un maialino di marzapane",
+  "occorrente": "alcuni maialini di marzapane",
   "data": "2026-12-31",
   "fine": "2027-01-01"
  },
@@ -164,7 +164,7 @@
   "titolo": "Le lenticchie del primo dell'anno",
   "pagina": 21,
   "scheda": 13,
-  "per_cosa": "Porta soldi",
+  "per_cosa": "Per augurare soldi",
   "per_chi": "Con la famiglia o con gli amici",
   "occorrente": "lenticchie, cotechino o zampone se vuoi",
   "data": "2027-01-01"
@@ -175,7 +175,7 @@
   "titolo": "Le monete in tasca",
   "pagina": 22,
   "scheda": 14,
-  "per_cosa": "Porta soldi per tutto l'anno",
+  "per_cosa": "Per augurare soldi tutto l'anno",
   "per_chi": "Da sola",
   "occorrente": "qualche moneta",
   "data": "2027-01-01"
@@ -183,10 +183,10 @@
  {
   "mese": "Gennaio 2027",
   "quando": "Il 1° gennaio",
-  "titolo": "Il primo dell'anno non si lava",
+  "titolo": "Il primo dell'anno non si fa il bucato",
   "pagina": 23,
   "scheda": 15,
-  "per_cosa": "Porta fortuna e salute che restano in casa",
+  "per_cosa": "Per tenere in casa fortuna e salute",
   "per_chi": "Una regola per tutta la casa",
   "occorrente": "",
   "data": "2027-01-01"
@@ -197,7 +197,7 @@
   "titolo": "Gabinat, chi lo dice per primo vince",
   "pagina": 26,
   "scheda": 18,
-  "per_cosa": "Porta fortuna",
+  "per_cosa": "Per augurare fortuna",
   "per_chi": "Con gli amici o con la famiglia",
   "occorrente": "qualche dolcetto o un po' di frutta secca da tenere in tasca",
   "data": "2027-01-05",
@@ -209,9 +209,9 @@
   "titolo": "I tredici assaggi per gli animali di casa",
   "pagina": 28,
   "scheda": 20,
-  "per_cosa": "Porta serenità alla casa",
+  "per_cosa": "Per augurare serenità alla casa",
   "per_chi": "Per chi ha un animale",
-  "occorrente": "tredici piccoli assaggi adatti al tuo animale",
+  "occorrente": "tredici piccoli assaggi dei cibi che il tuo animale mangia già",
   "data": "2027-01-05"
  },
  {
@@ -220,7 +220,7 @@
   "titolo": "Il pane spezzato sulla testa del più piccolo",
   "pagina": 27,
   "scheda": 19,
-  "per_cosa": "Porta fortuna a tutta la casa",
+  "per_cosa": "Per augurare fortuna a tutta la casa",
   "per_chi": "Con la famiglia, con i bambini",
   "occorrente": "una pagnotta rotonda o una focaccia",
   "data": "2027-01-06"
@@ -231,7 +231,7 @@
   "titolo": "La benedizione del tuo animale",
   "pagina": 29,
   "scheda": 21,
-  "per_cosa": "Porta salute ai tuoi animali",
+  "per_cosa": "Per la salute dei tuoi animali",
   "per_chi": "Per chi ha un animale",
   "occorrente": "il tuo animale, al guinzaglio o nel trasportino",
   "data": "2027-01-17"
@@ -242,7 +242,7 @@
   "titolo": "La candela benedetta della Candelora",
   "pagina": 31,
   "scheda": 22,
-  "per_cosa": "Porta protezione nei momenti difficili",
+  "per_cosa": "Per chiedere protezione nei momenti difficili",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "una candela benedetta il 2 febbraio",
   "data": "2027-02-02"
@@ -253,9 +253,9 @@
   "titolo": "L'ultima fetta di panettone per San Biagio",
   "pagina": 32,
   "scheda": 23,
-  "per_cosa": "Porta salute alla gola",
+  "per_cosa": "Per proteggere la gola",
   "per_chi": "Da sola o con la famiglia",
-  "occorrente": "un panettone o una fetta tenuti da parte da Natale, ben chiusi in un sacchetto",
+  "occorrente": "un po' di panettone tenuto da parte da Natale, in un sacchetto ben chiuso",
   "data": "2027-02-03"
  },
  {
@@ -264,7 +264,7 @@
   "titolo": "I dolci fritti del Martedì grasso",
   "pagina": 33,
   "scheda": 24,
-  "per_cosa": "Porta abbondanza",
+  "per_cosa": "Per augurare abbondanza",
   "per_chi": "Con la famiglia o con gli amici",
   "occorrente": "gli ingredienti della ricetta di casa (farina, uova, zucchero, olio per friggere)",
   "data": "2027-02-09"
@@ -275,9 +275,9 @@
   "titolo": "La tavola di San Giuseppe, in piccolo",
   "pagina": 35,
   "scheda": 25,
-  "per_cosa": "Porta la grazia alla famiglia",
+  "per_cosa": "Per chiedere una grazia per la famiglia",
   "per_chi": "Con la famiglia",
-  "occorrente": "una tovaglia bella, un'immagine di San Giuseppe, del pane, un piatto di grano o di legumi, qualche dolce",
+  "occorrente": "una tovaglia bella, un'immagine di San Giuseppe, del pane, un piatto di grano, qualche dolce",
   "data": "2027-03-18",
   "fine": "2027-03-19"
  },
@@ -287,7 +287,7 @@
   "titolo": "Il ramo d'ulivo delle Palme dietro la porta",
   "pagina": 36,
   "scheda": 26,
-  "per_cosa": "Porta protezione alla casa",
+  "per_cosa": "Per proteggere la casa",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "un rametto d'ulivo benedetto",
   "data": "2027-03-21"
@@ -298,9 +298,9 @@
   "titolo": "L'uovo benedetto nascosto in casa",
   "pagina": 37,
   "scheda": 27,
-  "per_cosa": "Porta protezione dai fulmini e dalla grandine",
+  "per_cosa": "Per proteggere la casa dai fulmini e dalla grandine",
   "per_chi": "Da sola o con la famiglia",
-  "occorrente": "un uovo sodo benedetto il Sabato Santo, 27 marzo",
+  "occorrente": "un uovo sodo benedetto il Sabato Santo, 27 marzo, un sacchettino di stoffa",
   "data": "2027-03-22",
   "fine": "2027-03-27"
  },
@@ -310,7 +310,7 @@
   "titolo": "La cuddura con le uova in numero dispari",
   "pagina": 41,
   "scheda": 31,
-  "per_cosa": "Porta abbondanza",
+  "per_cosa": "Per augurare abbondanza",
   "per_chi": "Con la famiglia, o da regalare",
   "occorrente": "impasto di pane dolce o di frolla, uova crude con il guscio (in numero dispari), un uovo sbattuto, codette colorate",
   "data": "2027-03-27",
@@ -322,7 +322,7 @@
   "titolo": "La colazione di Pasqua con l'uovo benedetto",
   "pagina": 38,
   "scheda": 28,
-  "per_cosa": "Porta buon auspicio alla famiglia",
+  "per_cosa": "Per cominciare bene la Pasqua in famiglia",
   "per_chi": "Con la famiglia",
   "occorrente": "uova sode benedette, pane pasquale, qualche fetta di salame",
   "data": "2027-03-28"
@@ -333,8 +333,8 @@
   "titolo": "La gara delle uova sode",
   "pagina": 39,
   "scheda": 29,
-  "per_cosa": "Porta fortuna a chi vince",
-  "per_chi": "In coppia o con gli amici, fino a quattro",
+  "per_cosa": "Per augurare fortuna a chi vince",
+  "per_chi": "In coppia o in un piccolo gruppo di amici",
   "occorrente": "un uovo sodo a testa",
   "data": "2027-03-28",
   "fine": "2027-03-29"
@@ -345,9 +345,9 @@
   "titolo": "L'uovo dipinto da conservare",
   "pagina": 40,
   "scheda": 30,
-  "per_cosa": "Porta salute e fortuna",
+  "per_cosa": "Per augurare salute e fortuna",
   "per_chi": "Con la famiglia o con gli amici",
-  "occorrente": "uova sode, colori alimentari o pennarelli per uova",
+  "occorrente": "uova (una da svuotare con un ago), colori alimentari o pennarelli per uova",
   "data": "2027-03-28"
  },
  {
@@ -356,9 +356,9 @@
   "titolo": "Il rosmarino e la ruta prima di San Giorgio",
   "pagina": 43,
   "scheda": 32,
-  "per_cosa": "Porta protezione dalla sfortuna",
+  "per_cosa": "Per tenere lontana la sfortuna",
   "per_chi": "Da sola o con la famiglia",
-  "occorrente": "qualche rametto di rosmarino o di ruta, una ciotola di terracotta o di metallo, i fiammiferi",
+  "occorrente": "alcuni rametti secchi di rosmarino o di ruta, una ciotola di terracotta, i fiammiferi",
   "data": "2027-04-20",
   "fine": "2027-04-22"
  },
@@ -368,8 +368,8 @@
   "titolo": "Il bocciolo di rosa di San Marco",
   "pagina": 44,
   "scheda": 33,
-  "per_cosa": "Porta fortuna in amore",
-  "per_chi": "In coppia",
+  "per_cosa": "Per augurare amore",
+  "per_chi": "In coppia, o per la mamma e le amiche",
   "occorrente": "un bocciolo di rosa rossa ancora chiuso, un nastrino, un biglietto",
   "data": "2027-04-25"
  },
@@ -379,7 +379,7 @@
   "titolo": "Il ramo fiorito sulla porta",
   "pagina": 46,
   "scheda": 34,
-  "per_cosa": "Porta abbondanza e salute",
+  "per_cosa": "Per augurare abbondanza e salute",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "un ramo fiorito, un nastro",
   "data": "2027-05-01"
@@ -390,7 +390,7 @@
   "titolo": "L'altarino di maggio",
   "pagina": 47,
   "scheda": 35,
-  "per_cosa": "Porta protezione alla casa",
+  "per_cosa": "Per mettere la casa sotto la protezione della Madonna",
   "per_chi": "Con la famiglia, con i nonni e i nipoti",
   "occorrente": "un'immagine della Madonna, fiori freschi, una candela, una mensola",
   "data": "2027-05-01",
@@ -402,7 +402,7 @@
   "titolo": "La rosa di Santa Rita in un cassetto",
   "pagina": 48,
   "scheda": 36,
-  "per_cosa": "Porta aiuto nei momenti difficili",
+  "per_cosa": "Per chiedere aiuto nei momenti difficili",
   "per_chi": "Da sola",
   "occorrente": "una rosa benedetta",
   "data": "2027-05-22"
@@ -413,7 +413,7 @@
   "titolo": "Il pane di Sant'Antonio da dividere",
   "pagina": 50,
   "scheda": 37,
-  "per_cosa": "Porta protezione ai figli",
+  "per_cosa": "Per chiedere protezione per i figli",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "del pane buono",
   "data": "2027-06-13"
@@ -424,7 +424,7 @@
   "titolo": "L'acqua di San Giovanni",
   "pagina": 51,
   "scheda": 38,
-  "per_cosa": "Porta salute e bellezza",
+  "per_cosa": "Per augurare salute e bellezza",
   "per_chi": "Da sola, in coppia o con la famiglia",
   "occorrente": "una bacinella, acqua, fiori ed erbe di campo o del giardino",
   "data": "2027-06-23"
@@ -435,7 +435,7 @@
   "titolo": "Il mazzetto di San Giovanni da tenere un anno",
   "pagina": 52,
   "scheda": 39,
-  "per_cosa": "Porta protezione dalla sfortuna",
+  "per_cosa": "Per tenere lontane la sfortuna e il malocchio",
   "per_chi": "Da sola o con la famiglia, con i bambini",
   "occorrente": "fiori ed erbe aromatiche (iperico, lavanda, rosmarino, salvia), uno spago o un nastro",
   "data": "2027-06-23"
@@ -446,7 +446,7 @@
   "titolo": "L'aglio di San Giovanni",
   "pagina": 53,
   "scheda": 40,
-  "per_cosa": "Porta soldi e protezione",
+  "per_cosa": "Per augurare prosperità e protezione",
   "per_chi": "Da sola",
   "occorrente": "una testa o una treccia d'aglio nuovo",
   "data": "2027-06-24"
@@ -457,7 +457,7 @@
   "titolo": "Lo scapolare della Madonna del Carmine",
   "pagina": 55,
   "scheda": 41,
-  "per_cosa": "Porta protezione",
+  "per_cosa": "Per chiedere la protezione della Madonna",
   "per_chi": "Da sola, o da regalare",
   "occorrente": "uno scapolare",
   "data": "2027-07-16"
@@ -468,9 +468,9 @@
   "titolo": "Il bagno di lavanda per il neonato",
   "pagina": 56,
   "scheda": 42,
-  "per_cosa": "Porta protezione al neonato",
+  "per_cosa": "Per proteggere il neonato dal malocchio",
   "per_chi": "Per i neonati di famiglia",
-  "occorrente": "qualche rametto di lavanda, l'acqua del bagnetto",
+  "occorrente": "un paio di rametti di lavanda, l'acqua del bagnetto",
   "data": "2027-07-22"
  },
  {
@@ -479,7 +479,7 @@
   "titolo": "Il desiderio della notte di San Lorenzo",
   "pagina": 58,
   "scheda": 43,
-  "per_cosa": "Porta un desiderio che si avvera",
+  "per_cosa": "Per esprimere un desiderio",
   "per_chi": "Da sola, in coppia o con gli amici",
   "occorrente": "una coperta, un posto lontano dalle luci, un po' di pazienza",
   "data": "2027-08-10"
@@ -490,7 +490,7 @@
   "titolo": "Il mazzo d'erbe dell'Assunta",
   "pagina": 59,
   "scheda": 44,
-  "per_cosa": "Porta salute e protezione",
+  "per_cosa": "Per augurare salute e protezione",
   "per_chi": "Da sola o con la famiglia",
   "occorrente": "sette, nove o dodici erbe e fiori diversi, uno spago",
   "data": "2027-08-15"
@@ -501,7 +501,7 @@
   "titolo": "Il bagno del primo settembre",
   "pagina": 61,
   "scheda": 45,
-  "per_cosa": "Porta salute per l'inverno",
+  "per_cosa": "Per augurare salute per l'inverno",
   "per_chi": "Da sola, in coppia o con gli amici",
   "occorrente": "il costume, un asciugamano",
   "data": "2027-09-01"
@@ -512,7 +512,7 @@
   "titolo": "Venerdì 17, cosa non si fa",
   "pagina": 62,
   "scheda": 46,
-  "per_cosa": "Porta protezione dalla sfortuna",
+  "per_cosa": "Per tenere lontana la sfortuna",
   "per_chi": "Una regola per tutta la casa",
   "occorrente": "",
   "data": "2027-09-17"
@@ -523,7 +523,7 @@
   "titolo": "La benedizione degli animali di San Francesco",
   "pagina": 64,
   "scheda": 47,
-  "per_cosa": "Porta salute ai tuoi animali",
+  "per_cosa": "Per la salute dei tuoi animali",
   "per_chi": "Per chi ha un animale",
   "occorrente": "il tuo animale, al guinzaglio o nel trasportino",
   "data": "2027-10-04"
@@ -534,7 +534,7 @@
   "titolo": "La castagna matta in tasca",
   "pagina": 65,
   "scheda": 48,
-  "per_cosa": "Porta salute",
+  "per_cosa": "Per augurare salute",
   "per_chi": "Da sola, o per i bambini",
   "occorrente": "una castagna matta (il frutto dell'ippocastano, non si mangia)",
   "data": "2027-10-25",
@@ -546,7 +546,7 @@
   "titolo": "La tavola apparecchiata per le anime",
   "pagina": 67,
   "scheda": 49,
-  "per_cosa": "Porta serenità e buona sorte alla famiglia",
+  "per_cosa": "Per augurare serenità alla famiglia",
   "per_chi": "Con la famiglia",
   "occorrente": "una tovaglia bella, pane, qualche dolce, un lumino",
   "data": "2027-11-01"
@@ -557,9 +557,9 @@
   "titolo": "I rami di Santa Barbara per il 2028",
   "pagina": 69,
   "scheda": 50,
-  "per_cosa": "Porta fortuna per l'anno nuovo",
+  "per_cosa": "Per augurare fortuna all'anno nuovo",
   "per_chi": "Da sola, in coppia o con la famiglia",
-  "occorrente": "qualche ramo di ciliegio o di un albero da frutto, un vaso, acqua tiepida",
+  "occorrente": "qualche ramo di ciliegio (o di melo, pero, albicocco, forsizia), un vaso, acqua tiepida, un coltello",
   "data": "2027-12-04"
  },
  {
@@ -568,7 +568,7 @@
   "titolo": "Venerdì 17, cosa non si fa",
   "pagina": 62,
   "scheda": 46,
-  "per_cosa": "Porta protezione dalla sfortuna",
+  "per_cosa": "Per tenere lontana la sfortuna",
   "per_chi": "Una regola per tutta la casa",
   "occorrente": "",
   "data": "2027-12-17"
